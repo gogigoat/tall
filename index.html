@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Will you be my valentine?</title>
+<title>secret</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -272,7 +272,7 @@ document.addEventListener("mousemove", e => {
     target.x = Math.max(20, Math.min(innerWidth - r.width - 20, target.x));
     target.y = Math.max(20, Math.min(innerHeight - r.height - 20, target.y));
     escapes++;
-    if (escapes === 6) noBtn.textContent = "no 😭";
+    if (escapes === 6) noBtn.textContent = "STOP";
   }
 
   if (Math.random() < 0.07) {
@@ -356,7 +356,7 @@ yesBtn.onclick = () => {
       <img src="images/pic6.jpg">
     </div>
     <p style="font-size:24px;color:#ff758c;font-weight:700">
-      Happy Valentine's Day 🌹✨
+      Happy Valentine's Day 
     </p>
   `;
 
@@ -374,7 +374,7 @@ function betrayNo() {
   noBtn.style.transition = "0.3s ease";
   noBtn.style.transform = "scale(1.2) rotate(6deg)";
   setTimeout(() => {
-    noBtn.textContent = "Yes 💕";
+    noBtn.textContent = "yes";
     noBtn.className = "yes";
     noBtn.style.transform = "scale(1)";
     noBtn.onclick = () => yesBtn.click();
